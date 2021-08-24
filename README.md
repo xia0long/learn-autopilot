@@ -5,7 +5,7 @@ There is no doubt that Tesla's Autopilot is great, if you want to learn it's tec
 **Network Architecture**
 
 <div align=center>
-<img src="network_architecture.png"  width="500px">
+<img src="network_architecture.png"  width="350px">
 </div>
 
 ## Papers
