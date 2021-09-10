@@ -17,14 +17,14 @@ def game_loop(args):
     UNIT_HEIGHT = args.height / 3
 
     CAMERA_CONFIGS = [
-        ["front1", carla.Transform(carla.Location(x=1.5, y=0, z=2.4), carla.Rotation(yaw=0)), 120, (UNIT_WIDTH, 0), None],
-        ["front2", carla.Transform(carla.Location(x=1.5, y=0.1, z=2.4), carla.Rotation(yaw=0)), 90, (2*UNIT_WIDTH, 0), None],
+        ["front1", carla.Transform(carla.Location(x=1.5, y=-0.1, z=2.4), carla.Rotation(yaw=0)), 45, (0, 0), None],
+        ["front2", carla.Transform(carla.Location(x=1.5, y=0, z=2.4), carla.Rotation(yaw=0)), 120, (UNIT_WIDTH, 0), None],
+        ["front3", carla.Transform(carla.Location(x=1.5, y=0.1, z=2.4), carla.Rotation(yaw=0)), 90, (2*UNIT_WIDTH, 0), None],
+        ["left_front", carla.Transform(carla.Location(x=0, y=-1.1, z=2.4), carla.Rotation(yaw=315)), 90, (0, UNIT_HEIGHT), None],
         ["right_front", carla.Transform(carla.Location(x=0, y=1.1, z=2.4), carla.Rotation(yaw=45)), 90, (2*UNIT_WIDTH, UNIT_HEIGHT), None],
-        ["right_rear", carla.Transform(carla.Location(x=1.0, y=1.1, z=1), carla.Rotation(yaw=135)), 120, (2*UNIT_WIDTH, 2*UNIT_HEIGHT), None],
-        ["left_front", carla.Transform(carla.Location(x=-1.5, y=0, z=2.4), carla.Rotation(yaw=180)), 120, (UNIT_WIDTH, 2*UNIT_HEIGHT), None],
         ["left_rear", carla.Transform(carla.Location(x=1.0, y=-1.1, z=1), carla.Rotation(yaw=225)), 120, (0, 2*UNIT_HEIGHT), None],
-        ["front2", carla.Transform(carla.Location(x=0, y=-1.1, z=2.4), carla.Rotation(yaw=315)), 90, (0, UNIT_HEIGHT), None],
-        ["front3", carla.Transform(carla.Location(x=1.5, y=-0.1, z=2.4), carla.Rotation(yaw=0)), 45, (0, 0), None]
+        ["rear", carla.Transform(carla.Location(x=-1.5, y=0, z=2.4), carla.Rotation(yaw=180)), 120, (UNIT_WIDTH, 2*UNIT_HEIGHT), None],
+        ["right_rear", carla.Transform(carla.Location(x=1.0, y=1.1, z=1), carla.Rotation(yaw=135)), 120, (2*UNIT_WIDTH, 2*UNIT_HEIGHT), None]
     ]
 
     try:
